@@ -11,6 +11,7 @@ import AVFoundation
 
 
 class CollectionViewCell: UICollectionViewCell {
+    public var currentSounds: [String] = ["wind"]
     var i = 1
     @IBOutlet var buttonImage: UIButton!
     @IBOutlet var soundSlider: UISlider!
@@ -25,14 +26,17 @@ class CollectionViewCell: UICollectionViewCell {
     @IBAction func buttonTapped(_ sender: UIButton) {
         if i == 1 {
             sender.tintColor = colors["pressed"]
-            if let sound = sender.currentTitle {
-                let currentSound = Sound.self
-                currentSound.play(file: sound, fileExtension: "mp3", numberOfLoops: -1)
+            if sender.currentTitle != nil {
+                currentSounds.removeAll()
+                currentSounds.append(sender.currentTitle!)
+                let sound = sounds[sender.currentTitle!]!!
+                sound.play()
                 i = 0
             }
             
         } else {
             sender.tintColor = colors["unpressed"]
+            
             i = 1
         }
         soundSlider.isHidden = !soundSlider.isHidden

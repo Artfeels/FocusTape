@@ -32,10 +32,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
-        let image = UIImage(systemName: sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)])
+        let soundTitle = sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)]
+        let image = UIImage(systemName: soundTitle)
         cell.buttonImage.setBackgroundImage(image, for: .normal)
         cell.tintColor = UIColor(red: 0.99, green: 0.83, blue: 0.41, alpha: 1.00)
-        cell.buttonImage.setTitle(sounds[sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)]], for: .normal)
+        cell.buttonImage.setTitle(soundTitle, for: .normal)
         return cell
     }
     
