@@ -20,38 +20,54 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="278-B2-63T">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-ee-D1f">
-                                <rect key="frame" x="10" y="0.0" width="108" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-ee-D1f">
+                                <rect key="frame" x="10" y="0.0" width="108" height="118"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-kj-HqK">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="90"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-gp-wbX">
+                                        <rect key="frame" x="14" y="1.5" width="80" height="77.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="D6K-aE-z3u"/>
+                                            <constraint firstAttribute="width" constant="80" id="Qsf-GC-hVg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="tintColor" red="0.99215686270000003" green="0.82745098039999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" backgroundImage="car" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fUC-B5-MqL"/>
+                                        </connections>
+                                    </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YXF-Qx-2QK">
-                                        <rect key="frame" x="3" y="90" width="102" height="39"/>
+                                        <rect key="frame" x="3" y="80" width="102" height="39"/>
                                         <color key="tintColor" red="0.61176470588235299" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="GUe-Ea-Mmz"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="sliderChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="Sza-CE-Wkd"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="kBZ-kj-HqK" secondAttribute="bottom" constant="38" id="2iD-YZ-8ZI"/>
                                     <constraint firstAttribute="trailing" secondItem="YXF-Qx-2QK" secondAttribute="trailing" constant="5" id="4yp-pf-15I"/>
-                                    <constraint firstItem="kBZ-kj-HqK" firstAttribute="top" secondItem="UPQ-ee-D1f" secondAttribute="top" id="CGk-hU-ycj"/>
-                                    <constraint firstItem="kBZ-kj-HqK" firstAttribute="leading" secondItem="UPQ-ee-D1f" secondAttribute="leading" id="LYE-Mb-UMs"/>
                                     <constraint firstItem="YXF-Qx-2QK" firstAttribute="leading" secondItem="UPQ-ee-D1f" secondAttribute="leading" constant="5" id="N6F-yr-Erl"/>
-                                    <constraint firstAttribute="trailing" secondItem="kBZ-kj-HqK" secondAttribute="trailing" id="n1k-k8-QsA"/>
+                                    <constraint firstAttribute="bottom" secondItem="hzK-gp-wbX" secondAttribute="bottom" constant="38" id="aiB-RR-qtb"/>
+                                    <constraint firstAttribute="trailing" secondItem="YXF-Qx-2QK" secondAttribute="trailing" constant="5" id="ebd-Cb-VPI"/>
+                                    <constraint firstItem="hzK-gp-wbX" firstAttribute="top" secondItem="UPQ-ee-D1f" secondAttribute="top" id="jsf-7h-D3N"/>
+                                    <constraint firstAttribute="bottom" secondItem="YXF-Qx-2QK" secondAttribute="bottom" id="mmy-93-2gM"/>
+                                    <constraint firstItem="YXF-Qx-2QK" firstAttribute="leading" secondItem="UPQ-ee-D1f" secondAttribute="leading" constant="5" id="siv-8u-41J"/>
+                                    <constraint firstItem="YXF-Qx-2QK" firstAttribute="top" secondItem="hzK-gp-wbX" secondAttribute="bottom" id="y6o-hX-0oF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UPQ-ee-D1f" secondAttribute="trailing" constant="10" id="OAR-xj-BiK"/>
-                            <constraint firstAttribute="bottom" secondItem="UPQ-ee-D1f" secondAttribute="bottom" id="TNm-RA-7Ub"/>
                             <constraint firstItem="UPQ-ee-D1f" firstAttribute="leading" secondItem="278-B2-63T" secondAttribute="leading" constant="10" id="nFs-Cl-xYH"/>
                             <constraint firstAttribute="height" constant="128" id="uDc-nZ-TeL"/>
                             <constraint firstItem="UPQ-ee-D1f" firstAttribute="top" secondItem="278-B2-63T" secondAttribute="top" id="uPp-BM-EZb"/>
-                            <constraint firstItem="UPQ-ee-D1f" firstAttribute="centerX" secondItem="278-B2-63T" secondAttribute="centerX" id="y1F-Wh-Xp7"/>
                             <constraint firstAttribute="width" constant="128" id="y8P-XK-uaS"/>
                         </constraints>
                     </view>
@@ -63,10 +79,13 @@
                 <constraint firstItem="278-B2-63T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lh7-jg-zWa"/>
             </constraints>
             <connections>
-                <outlet property="buttonImage" destination="kBZ-kj-HqK" id="hv7-u4-red"/>
+                <outlet property="buttonImage" destination="hzK-gp-wbX" id="edQ-xU-khY"/>
                 <outlet property="soundSlider" destination="YXF-Qx-2QK" id="Cqh-Fp-yv3"/>
             </connections>
             <point key="canvasLocation" x="121.73913043478262" y="140.625"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
+    </resources>
 </document>

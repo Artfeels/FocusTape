@@ -8,35 +8,36 @@
 import UIKit
 import AVFoundation
 
+
+
 class CollectionViewCell: UICollectionViewCell {
-    
-   
-    @IBOutlet var buttonImage: UIImageView!
+    var i = 1
+    @IBOutlet var buttonImage: UIButton!
     @IBOutlet var soundSlider: UISlider!
     @IBAction func sliderChanged(_ sender: UISlider) {
-        audioPlayer?.volume = sender.value
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         soundSlider.isHidden = true
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        buttonImage.isUserInteractionEnabled = true
-        buttonImage.addGestureRecognizer(tapGestureRecognizer)
     }
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
-        let green = UIColor(red: 0.61, green: 0.80, blue: 0.44, alpha: 1.00)
-        let yellow = UIColor(red: 0.99, green: 0.83, blue: 0.41, alpha: 1.00)
-        if tappedImage.tintColor == green {
-            tappedImage.tintColor = yellow
-            audioPlayer?.pause()
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        if i == 1 {
+            sender.tintColor = colors["pressed"]
+            if let sound = sender.currentTitle {
+                let currentSound = Sound.self
+                currentSound.play(file: sound, fileExtension: "mp3", numberOfLoops: -1)
+                i = 0
+            }
+            
         } else {
-            tappedImage.tintColor = green
-            playSound(soundname: "main-thunder")
+            sender.tintColor = colors["unpressed"]
+            i = 1
         }
         soundSlider.isHidden = !soundSlider.isHidden
     }
+    
 }
 
 

@@ -8,33 +8,6 @@
 import UIKit
 import AVFoundation
 
-var audioPlayer: AVAudioPlayer?
-
-func playSound(soundname: String) {
-    print("Loading player..")
-    guard let url = Bundle.main.url(forResource: soundname, withExtension: "mp3") else { return }
-    
-    do {
-        try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-        try AVAudioSession.sharedInstance().setActive(true)
-        
-        /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-        audioPlayer = try AVAudioPlayer(contentsOf: url)
-        
-        /* iOS 10 and earlier require the following line:
-         player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-        
-        guard let audioPlayer = audioPlayer else { return }
-        print("Ready to play")
-        audioPlayer.volume = 0.5
-        audioPlayer.numberOfLoops = -1
-        audioPlayer.play()
-        
-    } catch let error {
-        print(error.localizedDescription)
-    }
-}
-
 
 let reuseIdentifier = "ReusableCell"
 
@@ -59,9 +32,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
-        cell.buttonImage.image = UIImage(systemName: sounds[indexPath.row])
+        let image = UIImage(systemName: sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)])
+        cell.buttonImage.setBackgroundImage(image, for: .normal)
         cell.tintColor = UIColor(red: 0.99, green: 0.83, blue: 0.41, alpha: 1.00)
-        
+        cell.buttonImage.setTitle(sounds[sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)]], for: .normal)
         return cell
     }
     
@@ -70,10 +44,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func muteTapped(_ sender: UIButton) {
         if muteButton.currentTitle == "MUTE" {
             muteButton.setTitle("UNMUTE", for: .normal)
-            audioPlayer?.volume = 0.5
+            
         } else {
             muteButton.setTitle("MUTE", for: .normal)
-            audioPlayer?.volume = 0
+            
         }
         
     }

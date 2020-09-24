@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,17 +15,21 @@
 		76EFA61325148303007BE7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA61125148303007BE7AD /* LaunchScreen.storyboard */; };
 		76EFA648251597C9007BE7AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA646251597C9007BE7AD /* CollectionViewCell.swift */; };
 		76EFA649251597C9007BE7AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA647251597C9007BE7AD /* CollectionViewCell.xib */; };
-		76EFA64E25194257007BE7AD /* CellsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA64D25194257007BE7AD /* CellsCollection.swift */; };
+		76EFA64E25194257007BE7AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA64D25194257007BE7AD /* Constants.swift */; };
 		76EFA664251A7F24007BE7AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA663251A7F24007BE7AD /* ViewController.swift */; };
 		76EFA674251A8F9F007BE7AD /* main-thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA66E251A8F9E007BE7AD /* main-thunder.mp3 */; };
 		76EFA675251A8F9F007BE7AD /* main-waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA66F251A8F9E007BE7AD /* main-waves.mp3 */; };
 		76EFA676251A8F9F007BE7AD /* main-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA670251A8F9E007BE7AD /* main-wind.mp3 */; };
 		76EFA677251A8F9F007BE7AD /* main-sbowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA671251A8F9E007BE7AD /* main-sbowl.mp3 */; };
 		76EFA678251A8F9F007BE7AD /* main-crickets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA672251A8F9E007BE7AD /* main-crickets.mp3 */; };
-		76EFA679251A8F9F007BE7AD /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA673251A8F9E007BE7AD /* birds.mp3 */; };
+		76EFA679251A8F9F007BE7AD /* main-birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA673251A8F9E007BE7AD /* main-birds.mp3 */; };
+		76EFA697251C6DD8007BE7AD /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA696251C6DD8007BE7AD /* Sound.swift */; };
+		F8493F4E39EA206DC67268E7 /* Pods_FocusTape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8946C34714E70D00DB8CD558 /* Pods_FocusTape.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ED7886B46164498D61F2211 /* Pods-FocusTape.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTape.release.xcconfig"; path = "Target Support Files/Pods-FocusTape/Pods-FocusTape.release.xcconfig"; sourceTree = "<group>"; };
+		299185175CC6700A60ED7488 /* Pods-FocusTape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTape.debug.xcconfig"; path = "Target Support Files/Pods-FocusTape/Pods-FocusTape.debug.xcconfig"; sourceTree = "<group>"; };
 		76EFA60025148301007BE7AD /* FocusTape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EFA60325148301007BE7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76EFA60525148301007BE7AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,14 +40,16 @@
 		76EFA61425148303007BE7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EFA646251597C9007BE7AD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		76EFA647251597C9007BE7AD /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		76EFA64D25194257007BE7AD /* CellsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsCollection.swift; sourceTree = "<group>"; };
+		76EFA64D25194257007BE7AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76EFA663251A7F24007BE7AD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76EFA66E251A8F9E007BE7AD /* main-thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-thunder.mp3"; path = "../../../Downloads/main-thunder.mp3"; sourceTree = "<group>"; };
 		76EFA66F251A8F9E007BE7AD /* main-waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-waves.mp3"; path = "../../../Downloads/main-waves.mp3"; sourceTree = "<group>"; };
 		76EFA670251A8F9E007BE7AD /* main-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-wind.mp3"; path = "../../../Downloads/main-wind.mp3"; sourceTree = "<group>"; };
 		76EFA671251A8F9E007BE7AD /* main-sbowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-sbowl.mp3"; path = "../../../Downloads/main-sbowl.mp3"; sourceTree = "<group>"; };
 		76EFA672251A8F9E007BE7AD /* main-crickets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-crickets.mp3"; path = "../../../Downloads/main-crickets.mp3"; sourceTree = "<group>"; };
-		76EFA673251A8F9E007BE7AD /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = birds.mp3; path = ../../../Downloads/birds.mp3; sourceTree = "<group>"; };
+		76EFA673251A8F9E007BE7AD /* main-birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "main-birds.mp3"; path = "../../../Downloads/main-birds.mp3"; sourceTree = "<group>"; };
+		76EFA696251C6DD8007BE7AD /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		8946C34714E70D00DB8CD558 /* Pods_FocusTape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusTape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8493F4E39EA206DC67268E7 /* Pods_FocusTape.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58D6792CF4578D0D6E2DEFE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				299185175CC6700A60ED7488 /* Pods-FocusTape.debug.xcconfig */,
+				1ED7886B46164498D61F2211 /* Pods-FocusTape.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F010934C570113AB617F69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8946C34714E70D00DB8CD558 /* Pods_FocusTape.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76EFA5F725148301007BE7AD = {
 			isa = PBXGroup;
 			children = (
 				76EFA60225148301007BE7AD /* FocusTape */,
 				76EFA651251960CA007BE7AD /* Sounds */,
 				76EFA60125148301007BE7AD /* Products */,
+				58D6792CF4578D0D6E2DEFE2 /* Pods */,
+				5F010934C570113AB617F69D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +137,8 @@
 		76EFA64C251941CE007BE7AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				76EFA64D25194257007BE7AD /* CellsCollection.swift */,
+				76EFA64D25194257007BE7AD /* Constants.swift */,
+				76EFA696251C6DD8007BE7AD /* Sound.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,7 +146,7 @@
 		76EFA651251960CA007BE7AD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				76EFA673251A8F9E007BE7AD /* birds.mp3 */,
+				76EFA673251A8F9E007BE7AD /* main-birds.mp3 */,
 				76EFA672251A8F9E007BE7AD /* main-crickets.mp3 */,
 				76EFA671251A8F9E007BE7AD /* main-sbowl.mp3 */,
 				76EFA66E251A8F9E007BE7AD /* main-thunder.mp3 */,
@@ -136,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76EFA61725148303007BE7AD /* Build configuration list for PBXNativeTarget "FocusTape" */;
 			buildPhases = (
+				C4DD12159BAF2807CF103974 /* [CP] Check Pods Manifest.lock */,
 				76EFA5FC25148301007BE7AD /* Sources */,
 				76EFA5FD25148301007BE7AD /* Frameworks */,
 				76EFA5FE25148301007BE7AD /* Resources */,
+				4C5AB7F80D2A29A73DDD97C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +218,7 @@
 				76EFA675251A8F9F007BE7AD /* main-waves.mp3 in Resources */,
 				76EFA61325148303007BE7AD /* LaunchScreen.storyboard in Resources */,
 				76EFA676251A8F9F007BE7AD /* main-wind.mp3 in Resources */,
-				76EFA679251A8F9F007BE7AD /* birds.mp3 in Resources */,
+				76EFA679251A8F9F007BE7AD /* main-birds.mp3 in Resources */,
 				76EFA61025148303007BE7AD /* Assets.xcassets in Resources */,
 				76EFA649251597C9007BE7AD /* CollectionViewCell.xib in Resources */,
 				76EFA677251A8F9F007BE7AD /* main-sbowl.mp3 in Resources */,
@@ -201,14 +230,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C5AB7F80D2A29A73DDD97C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTape/Pods-FocusTape-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTape/Pods-FocusTape-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTape/Pods-FocusTape-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DD12159BAF2807CF103974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FocusTape-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76EFA5FC25148301007BE7AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EFA697251C6DD8007BE7AD /* Sound.swift in Sources */,
 				76EFA664251A7F24007BE7AD /* ViewController.swift in Sources */,
 				76EFA648251597C9007BE7AD /* CollectionViewCell.swift in Sources */,
-				76EFA64E25194257007BE7AD /* CellsCollection.swift in Sources */,
+				76EFA64E25194257007BE7AD /* Constants.swift in Sources */,
 				76EFA60E25148301007BE7AD /* FocusTape.xcdatamodeld in Sources */,
 				76EFA60425148301007BE7AD /* AppDelegate.swift in Sources */,
 				76EFA60625148301007BE7AD /* SceneDelegate.swift in Sources */,
@@ -355,6 +427,7 @@
 		};
 		76EFA61825148303007BE7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299185175CC6700A60ED7488 /* Pods-FocusTape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -375,6 +448,7 @@
 		};
 		76EFA61925148303007BE7AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED7886B46164498D61F2211 /* Pods-FocusTape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
