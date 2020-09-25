@@ -3,7 +3,7 @@
 //  FocusTape
 //
 //  Created by Artem Pechenkin on 9/18/20.
-//  Sounds: Fire, Thunder, Rain, Crickets, Wind, Ambience, Water, Forest, Birds, Singing Bowl, Meditation
+//  Sounds: Fire, Thunder, Rain, Crickets, Wind, Ambience, Waves, Forest, Birds, Singing Bowl, Meditation
 
 import UIKit
 import AVFoundation
@@ -53,6 +53,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
+        muteButton.isHidden = true
     }
     
     override func didReceiveMemoryWarning() {
