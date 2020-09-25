@@ -11,12 +11,15 @@ import AVFoundation
 
 
 class CollectionViewCell: UICollectionViewCell {
-    public var currentSounds: [String] = ["wind"]
-    var i = 1
+    var playing = false
+    var soundName = ""
+    public var currentSound: Sound?
     @IBOutlet var buttonImage: UIButton!
     @IBOutlet var soundSlider: UISlider!
     @IBAction func sliderChanged(_ sender: UISlider) {
         
+        
+        currentSound?.volume = sender.value
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,20 +27,19 @@ class CollectionViewCell: UICollectionViewCell {
         soundSlider.isHidden = true
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
-        if i == 1 {
-            sender.tintColor = colors["pressed"]
-            if sender.currentTitle != nil {
-                currentSounds.removeAll()
-                currentSounds.append(sender.currentTitle!)
-                let sound = sounds[sender.currentTitle!]!!
-                sound.play()
-                i = 0
+        if !playing {
+            sender.tintColor = colors["green"]
+            if (buttonImage.currentTitle != nil) {
+                let url = Bundle.main.url(forResource: sounds[buttonImage.currentTitle!]!, withExtension: "mp3")
+                currentSound = Sound(url: url!)
+                currentSound?.volume = 0.5
+                currentSound?.play(numberOfLoops: -1)
             }
-            
+            playing = true
         } else {
-            sender.tintColor = colors["unpressed"]
-            
-            i = 1
+            sender.tintColor = colors["yellow"]
+            playing = false
+            currentSound?.stop()
         }
         soundSlider.isHidden = !soundSlider.isHidden
     }

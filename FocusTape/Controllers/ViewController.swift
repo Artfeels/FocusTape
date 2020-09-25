@@ -8,7 +8,6 @@
 import UIKit
 import AVFoundation
 
-
 let reuseIdentifier = "ReusableCell"
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -32,11 +31,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
-        let soundTitle = sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)]
-        let image = UIImage(systemName: soundTitle)
-        cell.buttonImage.setBackgroundImage(image, for: .normal)
-        cell.tintColor = UIColor(red: 0.99, green: 0.83, blue: 0.41, alpha: 1.00)
-        cell.buttonImage.setTitle(soundTitle, for: .normal)
+        cell.soundName = sounds.keys[sounds.index(sounds.startIndex, offsetBy: indexPath.row)]
+        cell.buttonImage.setBackgroundImage(UIImage(systemName: cell.soundName), for: .normal)
+        cell.buttonImage.setTitle(cell.soundName, for: .normal)
         return cell
     }
     
@@ -45,10 +42,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func muteTapped(_ sender: UIButton) {
         if muteButton.currentTitle == "MUTE" {
             muteButton.setTitle("UNMUTE", for: .normal)
-            
         } else {
             muteButton.setTitle("MUTE", for: .normal)
-            
         }
         
     }
