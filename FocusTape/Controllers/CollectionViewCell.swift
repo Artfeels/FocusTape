@@ -7,7 +7,7 @@
 
 import UIKit
 import AVFoundation
-
+import SVGKit
 
 
 class CollectionViewCell: UICollectionViewCell {
@@ -25,21 +25,24 @@ class CollectionViewCell: UICollectionViewCell {
         soundSlider.isHidden = true
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
+        let image = SVGKImage(named: buttonImage.currentTitle!)
         if !playing {
-            sender.tintColor = colors["green"]
             if (buttonImage.currentTitle != nil) {
+                image?.fillColor(color: colors["green"]!, opacity: 1.0)
                 let url = Bundle.main.url(forResource: sounds[buttonImage.currentTitle!]!, withExtension: "mp3")
                 Sound.category = .playback
                 currentSound = Sound(url: url!)
                 currentSound?.volume = 0.5
                 currentSound?.play(numberOfLoops: -1)
+                playing = true
             }
-            playing = true
+            
         } else {
-            sender.tintColor = colors["yellow"]
+            image?.fillColor(color: colors["yellow"]!, opacity: 1.0)
             playing = false
             currentSound?.stop()
         }
+        buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
         soundSlider.isHidden = !soundSlider.isHidden
     }
     

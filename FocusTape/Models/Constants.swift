@@ -10,10 +10,14 @@ import UIKit
 
 
     let sounds = [
+        "birds" : "main-birds",
+        "rain" : "main-rain",
+        "fire" : "main-fire",
+        "storm" : "main-thunder",
+        "wave" : "main-waves",
         "wind" : "main-wind",
-        "car" : "main-birds",
-        "pencil" : "main-waves",
-        "cloud" : "main-thunder"
+        "grass" : "main-crickets",
+        "bowl" : "main-sbowl"
     ]
     
     let colors = [

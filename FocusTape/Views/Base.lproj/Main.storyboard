@@ -47,19 +47,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-cd-BAj" userLabel="Bottom View">
                                                 <rect key="frame" x="8" y="718" width="398" height="100"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-uH-jqU">
-                                                        <rect key="frame" x="149" y="8" width="100" height="39"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="6xu-gA-m48"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                                                        <state key="normal" title="MUTE">
-                                                            <color key="titleColor" red="0.99215686270000003" green="0.82745098039999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fr5-km-cHY">
+                                                        <rect key="frame" x="174.5" y="8" width="51" height="31"/>
+                                                        <accessibility key="accessibilityConfiguration" hint="Sound ON/OFF" label="Sound ON/OFF"/>
+                                                        <color key="onTintColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <connections>
-                                                            <action selector="muteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcK-Kq-Ewm"/>
+                                                            <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="5l6-QD-JWd"/>
                                                         </connections>
-                                                    </button>
+                                                    </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Artem Pechenkin in California 2020" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf6-hD-31n">
                                                         <rect key="frame" x="74" y="55" width="250" height="36"/>
                                                         <constraints>
@@ -72,11 +67,11 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstItem="Uim-uH-jqU" firstAttribute="centerX" secondItem="Xgd-cd-BAj" secondAttribute="centerX" id="0Yx-jD-3rc"/>
-                                                    <constraint firstItem="uf6-hD-31n" firstAttribute="centerX" secondItem="Uim-uH-jqU" secondAttribute="centerX" id="1xt-XP-Hd3"/>
+                                                    <constraint firstItem="Fr5-km-cHY" firstAttribute="centerX" secondItem="Xgd-cd-BAj" secondAttribute="centerX" id="8MA-K1-y0X"/>
+                                                    <constraint firstItem="Fr5-km-cHY" firstAttribute="top" secondItem="Xgd-cd-BAj" secondAttribute="top" constant="8" id="BDy-7b-7IN"/>
                                                     <constraint firstAttribute="height" constant="100" id="Q27-ME-1XP"/>
-                                                    <constraint firstItem="Uim-uH-jqU" firstAttribute="top" secondItem="Xgd-cd-BAj" secondAttribute="top" constant="8" id="ZKc-Ii-Gw8"/>
-                                                    <constraint firstItem="uf6-hD-31n" firstAttribute="top" secondItem="Uim-uH-jqU" secondAttribute="bottom" constant="8" id="koJ-Yk-YJN"/>
+                                                    <constraint firstItem="uf6-hD-31n" firstAttribute="top" secondItem="Fr5-km-cHY" secondAttribute="bottom" constant="16" id="Q48-Rs-oh1"/>
+                                                    <constraint firstItem="uf6-hD-31n" firstAttribute="centerX" secondItem="Fr5-km-cHY" secondAttribute="centerX" id="xQf-0w-LHN"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -111,7 +106,7 @@
                     <connections>
                         <outlet property="CollectionView" destination="Nty-9x-TXd" id="HL5-Uo-g91"/>
                         <outlet property="collectionView" destination="Nty-9x-TXd" id="TGS-r5-58c"/>
-                        <outlet property="muteButton" destination="Uim-uH-jqU" id="v0a-t4-cOK"/>
+                        <outlet property="onSwitch" destination="Fr5-km-cHY" id="jZc-jD-hjL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

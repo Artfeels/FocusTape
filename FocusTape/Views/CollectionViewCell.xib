@@ -21,10 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-ee-D1f">
-                                <rect key="frame" x="10" y="0.0" width="108" height="118"/>
+                                <rect key="frame" x="10" y="5" width="108" height="118"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-gp-wbX">
-                                        <rect key="frame" x="14" y="1.5" width="80" height="77.5"/>
+                                        <rect key="frame" x="14" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="D6K-aE-z3u"/>
@@ -32,7 +32,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                         <color key="tintColor" red="0.99215686270000003" green="0.82745098039999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" backgroundImage="car" catalog="system">
+                                        <state key="normal" backgroundImage="fire">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -41,7 +41,7 @@
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YXF-Qx-2QK">
                                         <rect key="frame" x="3" y="80" width="102" height="39"/>
-                                        <color key="tintColor" red="0.61176470588235299" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.61176470589999998" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="GUe-Ea-Mmz"/>
                                         </constraints>
@@ -64,10 +64,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="UPQ-ee-D1f" firstAttribute="top" secondItem="278-B2-63T" secondAttribute="top" constant="5" id="1fm-Og-hjs"/>
                             <constraint firstAttribute="trailing" secondItem="UPQ-ee-D1f" secondAttribute="trailing" constant="10" id="OAR-xj-BiK"/>
                             <constraint firstItem="UPQ-ee-D1f" firstAttribute="leading" secondItem="278-B2-63T" secondAttribute="leading" constant="10" id="nFs-Cl-xYH"/>
                             <constraint firstAttribute="height" constant="128" id="uDc-nZ-TeL"/>
-                            <constraint firstItem="UPQ-ee-D1f" firstAttribute="top" secondItem="278-B2-63T" secondAttribute="top" id="uPp-BM-EZb"/>
                             <constraint firstAttribute="width" constant="128" id="y8P-XK-uaS"/>
                         </constraints>
                     </view>
@@ -86,6 +86,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="fire" width="512" height="512"/>
     </resources>
 </document>

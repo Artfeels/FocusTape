@@ -1,16 +1,26 @@
 PODS:
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
   - SwiftySound (1.2.0)
 
 DEPENDENCIES:
+  - SVGKit
   - SwiftySound
 
 SPEC REPOS:
   trunk:
+    - CocoaLumberjack
+    - SVGKit
     - SwiftySound
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
   SwiftySound: 9eb28bb14edb601b40027e44319e0ef8383f88bf
 
-PODFILE CHECKSUM: c9b34bf91ce1a229585c4a68f69f3cb13a2b9a22
+PODFILE CHECKSUM: c6e591282240b5f858a61884cd65546dc67382d8
 
 COCOAPODS: 1.9.3
