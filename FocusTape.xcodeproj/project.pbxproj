@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		763849772522A7A600F426A0 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763849762522A7A600F426A0 /* Switch.swift */; };
 		7638497B2523B15E00F426A0 /* main-rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7638497A2523B15E00F426A0 /* main-rain.mp3 */; };
-		7638497E2523B1CD00F426A0 /* grass.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638497D2523B1CD00F426A0 /* grass.svg */; };
-		763849842523B73900F426A0 /* main-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 763849832523B73900F426A0 /* main-forest.mp3 */; };
-		7638498F2523B7F400F426A0 /* birds.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638498E2523B7F400F426A0 /* birds.svg */; };
-		767A8DEE252272E00076808F /* fire.svg in Resources */ = {isa = PBXBuildFile; fileRef = 767A8DE9252272DF0076808F /* fire.svg */; };
-		767A8DEF252272E00076808F /* wave.svg in Resources */ = {isa = PBXBuildFile; fileRef = 767A8DEA252272DF0076808F /* wave.svg */; };
-		767A8DF0252272E00076808F /* storm.svg in Resources */ = {isa = PBXBuildFile; fileRef = 767A8DEB252272E00076808F /* storm.svg */; };
-		767A8DF1252272E00076808F /* wind.svg in Resources */ = {isa = PBXBuildFile; fileRef = 767A8DEC252272E00076808F /* wind.svg */; };
-		767A8DF2252272E00076808F /* rain.svg in Resources */ = {isa = PBXBuildFile; fileRef = 767A8DED252272E00076808F /* rain.svg */; };
+		763849A12523BC9500F426A0 /* rain.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849992523BC9400F426A0 /* rain.svg */; };
+		763849A22523BC9500F426A0 /* birds.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638499A2523BC9400F426A0 /* birds.svg */; };
+		763849A32523BC9500F426A0 /* grass.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638499B2523BC9400F426A0 /* grass.svg */; };
+		763849A42523BC9500F426A0 /* wave.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638499C2523BC9400F426A0 /* wave.svg */; };
+		763849A52523BC9500F426A0 /* storm.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638499D2523BC9500F426A0 /* storm.svg */; };
+		763849A72523BC9500F426A0 /* fire.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7638499F2523BC9500F426A0 /* fire.svg */; };
+		763849A82523BC9500F426A0 /* wind.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849A02523BC9500F426A0 /* wind.svg */; };
+		763849B02523BDD800F426A0 /* bowl.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849AF2523BDD800F426A0 /* bowl.svg */; };
+		763849B42523C9FB00F426A0 /* noise.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849B22523C9FB00F426A0 /* noise.svg */; };
+		763849B52523C9FB00F426A0 /* pine.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849B32523C9FB00F426A0 /* pine.svg */; };
+		763849BA2523CCCD00F426A0 /* main-pink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 763849B72523CCCC00F426A0 /* main-pink.mp3 */; };
+		763849BB2523CCCD00F426A0 /* main-chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 763849B82523CCCD00F426A0 /* main-chimes.mp3 */; };
+		763849BC2523CCCD00F426A0 /* main-fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 763849B92523CCCD00F426A0 /* main-fan.mp3 */; };
+		763849C02523CD7D00F426A0 /* chimes.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849BE2523CD7D00F426A0 /* chimes.svg */; };
+		763849C12523CD7D00F426A0 /* fan.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849BF2523CD7D00F426A0 /* fan.svg */; };
+		763849C52523D07A00F426A0 /* main-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 763849C42523D07A00F426A0 /* main-forest.mp3 */; };
 		76EFA60425148301007BE7AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA60325148301007BE7AD /* AppDelegate.swift */; };
 		76EFA60625148301007BE7AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFA60525148301007BE7AD /* SceneDelegate.swift */; };
 		76EFA60B25148301007BE7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EFA60925148301007BE7AD /* Main.storyboard */; };
@@ -43,14 +51,22 @@
 		299185175CC6700A60ED7488 /* Pods-FocusTape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTape.debug.xcconfig"; path = "Target Support Files/Pods-FocusTape/Pods-FocusTape.debug.xcconfig"; sourceTree = "<group>"; };
 		763849762522A7A600F426A0 /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		7638497A2523B15E00F426A0 /* main-rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-rain.mp3"; sourceTree = "<group>"; };
-		7638497D2523B1CD00F426A0 /* grass.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = grass.svg; path = FocusTape/ImagesSVG/grass.svg; sourceTree = SOURCE_ROOT; };
-		763849832523B73900F426A0 /* main-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-forest.mp3"; sourceTree = "<group>"; };
-		7638498E2523B7F400F426A0 /* birds.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birds.svg; path = ../../Downloads/birds.svg; sourceTree = SOURCE_ROOT; };
-		767A8DE9252272DF0076808F /* fire.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = fire.svg; path = ../../Downloads/fire.svg; sourceTree = SOURCE_ROOT; };
-		767A8DEA252272DF0076808F /* wave.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wave.svg; path = ../../Downloads/wave.svg; sourceTree = SOURCE_ROOT; };
-		767A8DEB252272E00076808F /* storm.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = storm.svg; path = ../../Downloads/storm.svg; sourceTree = SOURCE_ROOT; };
-		767A8DEC252272E00076808F /* wind.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wind.svg; path = ../../Downloads/wind.svg; sourceTree = SOURCE_ROOT; };
-		767A8DED252272E00076808F /* rain.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rain.svg; path = ../../Downloads/rain.svg; sourceTree = SOURCE_ROOT; };
+		763849992523BC9400F426A0 /* rain.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rain.svg; sourceTree = "<group>"; };
+		7638499A2523BC9400F426A0 /* birds.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birds.svg; path = ../../../../Downloads/birds.svg; sourceTree = "<group>"; };
+		7638499B2523BC9400F426A0 /* grass.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = grass.svg; path = ../../../../Downloads/grass.svg; sourceTree = "<group>"; };
+		7638499C2523BC9400F426A0 /* wave.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wave.svg; sourceTree = "<group>"; };
+		7638499D2523BC9500F426A0 /* storm.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = storm.svg; sourceTree = "<group>"; };
+		7638499F2523BC9500F426A0 /* fire.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fire.svg; sourceTree = "<group>"; };
+		763849A02523BC9500F426A0 /* wind.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wind.svg; sourceTree = "<group>"; };
+		763849AF2523BDD800F426A0 /* bowl.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bowl.svg; sourceTree = "<group>"; };
+		763849B22523C9FB00F426A0 /* noise.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = noise.svg; sourceTree = "<group>"; };
+		763849B32523C9FB00F426A0 /* pine.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pine.svg; sourceTree = "<group>"; };
+		763849B72523CCCC00F426A0 /* main-pink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-pink.mp3"; sourceTree = "<group>"; };
+		763849B82523CCCD00F426A0 /* main-chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-chimes.mp3"; sourceTree = "<group>"; };
+		763849B92523CCCD00F426A0 /* main-fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-fan.mp3"; sourceTree = "<group>"; };
+		763849BE2523CD7D00F426A0 /* chimes.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chimes.svg; sourceTree = "<group>"; };
+		763849BF2523CD7D00F426A0 /* fan.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fan.svg; sourceTree = "<group>"; };
+		763849C42523D07A00F426A0 /* main-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-forest.mp3"; sourceTree = "<group>"; };
 		76EFA60025148301007BE7AD /* FocusTape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EFA60325148301007BE7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76EFA60525148301007BE7AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,18 +119,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		767A8DE7252272BE0076808F /* ImagesSVG */ = {
+		767A8DE7252272BE0076808F /* SVG */ = {
 			isa = PBXGroup;
 			children = (
-				767A8DE9252272DF0076808F /* fire.svg */,
-				767A8DED252272E00076808F /* rain.svg */,
-				767A8DEB252272E00076808F /* storm.svg */,
-				767A8DEA252272DF0076808F /* wave.svg */,
-				7638498E2523B7F400F426A0 /* birds.svg */,
-				7638497D2523B1CD00F426A0 /* grass.svg */,
-				767A8DEC252272E00076808F /* wind.svg */,
+				7638499A2523BC9400F426A0 /* birds.svg */,
+				7638499F2523BC9500F426A0 /* fire.svg */,
+				7638499B2523BC9400F426A0 /* grass.svg */,
+				763849AF2523BDD800F426A0 /* bowl.svg */,
+				763849992523BC9400F426A0 /* rain.svg */,
+				7638499D2523BC9500F426A0 /* storm.svg */,
+				7638499C2523BC9400F426A0 /* wave.svg */,
+				763849BE2523CD7D00F426A0 /* chimes.svg */,
+				763849BF2523CD7D00F426A0 /* fan.svg */,
+				763849B22523C9FB00F426A0 /* noise.svg */,
+				763849B32523C9FB00F426A0 /* pine.svg */,
+				763849A02523BC9500F426A0 /* wind.svg */,
 			);
-			path = ImagesSVG;
+			path = SVG;
 			sourceTree = "<group>";
 		};
 		76EFA5F725148301007BE7AD = {
@@ -139,7 +160,7 @@
 		76EFA60225148301007BE7AD /* FocusTape */ = {
 			isa = PBXGroup;
 			children = (
-				767A8DE7252272BE0076808F /* ImagesSVG */,
+				767A8DE7252272BE0076808F /* SVG */,
 				76EFA64C251941CE007BE7AD /* Models */,
 				76EFA621251556BA007BE7AD /* Views */,
 				76EFA620251556AF007BE7AD /* Controllers */,
@@ -185,10 +206,13 @@
 			isa = PBXGroup;
 			children = (
 				76EFA673251A8F9E007BE7AD /* main-birds.mp3 */,
+				763849C42523D07A00F426A0 /* main-forest.mp3 */,
+				763849B82523CCCD00F426A0 /* main-chimes.mp3 */,
+				763849B92523CCCD00F426A0 /* main-fan.mp3 */,
+				763849B72523CCCC00F426A0 /* main-pink.mp3 */,
 				7638497A2523B15E00F426A0 /* main-rain.mp3 */,
 				76EFA672251A8F9E007BE7AD /* main-crickets.mp3 */,
 				76EFA6A3251EC592007BE7AD /* main-fire.mp3 */,
-				763849832523B73900F426A0 /* main-forest.mp3 */,
 				76EFA671251A8F9E007BE7AD /* main-sbowl.mp3 */,
 				76EFA66E251A8F9E007BE7AD /* main-thunder.mp3 */,
 				76EFA66F251A8F9E007BE7AD /* main-waves.mp3 */,
@@ -256,26 +280,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7638497E2523B1CD00F426A0 /* grass.svg in Resources */,
 				76EFA675251A8F9F007BE7AD /* main-waves.mp3 in Resources */,
+				763849C02523CD7D00F426A0 /* chimes.svg in Resources */,
 				7638497B2523B15E00F426A0 /* main-rain.mp3 in Resources */,
+				763849A22523BC9500F426A0 /* birds.svg in Resources */,
 				76EFA6A4251EC592007BE7AD /* main-fire.mp3 in Resources */,
 				76EFA61325148303007BE7AD /* LaunchScreen.storyboard in Resources */,
-				763849842523B73900F426A0 /* main-forest.mp3 in Resources */,
+				763849C52523D07A00F426A0 /* main-forest.mp3 in Resources */,
+				763849A42523BC9500F426A0 /* wave.svg in Resources */,
 				76EFA676251A8F9F007BE7AD /* main-wind.mp3 in Resources */,
-				7638498F2523B7F400F426A0 /* birds.svg in Resources */,
-				767A8DEE252272E00076808F /* fire.svg in Resources */,
+				763849B52523C9FB00F426A0 /* pine.svg in Resources */,
+				763849A32523BC9500F426A0 /* grass.svg in Resources */,
 				76EFA679251A8F9F007BE7AD /* main-birds.mp3 in Resources */,
+				763849B02523BDD800F426A0 /* bowl.svg in Resources */,
+				763849A82523BC9500F426A0 /* wind.svg in Resources */,
+				763849A52523BC9500F426A0 /* storm.svg in Resources */,
 				76EFA61025148303007BE7AD /* Assets.xcassets in Resources */,
+				763849A72523BC9500F426A0 /* fire.svg in Resources */,
+				763849B42523C9FB00F426A0 /* noise.svg in Resources */,
 				76EFA649251597C9007BE7AD /* CollectionViewCell.xib in Resources */,
-				767A8DF1252272E00076808F /* wind.svg in Resources */,
 				76EFA677251A8F9F007BE7AD /* main-sbowl.mp3 in Resources */,
+				763849A12523BC9500F426A0 /* rain.svg in Resources */,
 				76EFA678251A8F9F007BE7AD /* main-crickets.mp3 in Resources */,
-				767A8DF0252272E00076808F /* storm.svg in Resources */,
+				763849C12523CD7D00F426A0 /* fan.svg in Resources */,
+				763849BC2523CCCD00F426A0 /* main-fan.mp3 in Resources */,
+				763849BB2523CCCD00F426A0 /* main-chimes.mp3 in Resources */,
 				76EFA674251A8F9F007BE7AD /* main-thunder.mp3 in Resources */,
-				767A8DF2252272E00076808F /* rain.svg in Resources */,
-				767A8DEF252272E00076808F /* wave.svg in Resources */,
 				76EFA60B25148301007BE7AD /* Main.storyboard in Resources */,
+				763849BA2523CCCD00F426A0 /* main-pink.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

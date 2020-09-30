@@ -17,7 +17,11 @@ import UIKit
         "wave" : "main-waves",
         "wind" : "main-wind",
         "grass" : "main-crickets",
-        "bowl" : "main-sbowl"
+        "bowl" : "main-sbowl",
+        "pine" : "main-forest",
+        "noise" : "main-pink",
+        "fan" : "main-fan",
+        "chimes" : "main-chimes"
     ]
     
     let colors = [

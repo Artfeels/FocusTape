@@ -10,7 +10,7 @@ import AVFoundation
 import SVGKit
 
 let reuseIdentifier = "ReusableCell"
-
+var cells: [CollectionViewCell] = []
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     
@@ -37,11 +37,36 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         image?.fillColor(color: colors["yellow"]!, opacity: 1.0)
         cell.buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
         cell.buttonImage.setTitle(cell.soundName, for: .normal) //set short name ex. "wind" like passing variable
+        cells.append(cell)
         return cell
     }
     
     @IBOutlet var onSwitch: UISwitch!
     @IBAction func switchToggled(_ sender: UISwitch) {
+        
+        if !sender.isOn {
+            cells.forEach {cell in
+                if cell.playing {
+                    cell.soundSlider.isHidden = true
+                    cell.playing = false
+                    cell.currentSound?.pause()
+                    let image = SVGKImage(named: cell.soundName)
+                    image?.fillColor(color: colors["yellow"]!, opacity: 1.0)
+                    cell.buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
+                }
+            }
+        } else {
+            cells.forEach { cell in
+                if ((cell.currentSound?.paused) != nil) {
+                    cell.playing = true
+                    cell.currentSound?.resume()
+                    let image = SVGKImage(named: cell.soundName)
+                    image?.fillColor(color: colors["green"]!, opacity: 1.0)
+                    cell.buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
+                    cell.soundSlider.isHidden = false
+                }
+            }
+        }
     }
     @IBOutlet var collectionView: UICollectionView!
     
@@ -50,7 +75,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-    
+        Sound.enabled = true
     }
     
 }

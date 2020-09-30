@@ -40,7 +40,7 @@ class CollectionViewCell: UICollectionViewCell {
         } else {
             image?.fillColor(color: colors["yellow"]!, opacity: 1.0)
             playing = false
-            currentSound?.stop()
+            currentSound?.pause()
         }
         buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
         soundSlider.isHidden = !soundSlider.isHidden
