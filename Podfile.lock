@@ -2,29 +2,25 @@ PODS:
   - CocoaLumberjack (3.6.2):
     - CocoaLumberjack/Core (= 3.6.2)
   - CocoaLumberjack/Core (3.6.2)
-  - RAMPaperSwitch (2.0.1)
   - SVGKit (2.1.1):
     - CocoaLumberjack (~> 3.0)
   - SwiftySound (1.2.0)
 
 DEPENDENCIES:
-  - RAMPaperSwitch
   - SVGKit
   - SwiftySound
 
 SPEC REPOS:
   trunk:
     - CocoaLumberjack
-    - RAMPaperSwitch
     - SVGKit
     - SwiftySound
 
 SPEC CHECKSUMS:
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
-  RAMPaperSwitch: 80b9e62d28b8e2e6a94abd86c0a490febb803657
   SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
   SwiftySound: 9eb28bb14edb601b40027e44319e0ef8383f88bf
 
-PODFILE CHECKSUM: a1b2b46505b8792369085931ec507eb03fc9f6c3
+PODFILE CHECKSUM: c6e591282240b5f858a61884cd65546dc67382d8
 
 COCOAPODS: 1.9.3

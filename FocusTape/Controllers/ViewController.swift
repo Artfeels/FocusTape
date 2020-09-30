@@ -43,8 +43,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet var onSwitch: UISwitch!
     @IBAction func switchToggled(_ sender: UISwitch) {
-        
         if !sender.isOn {
+            sender.onTintColor = colors["yellow"]
             cells.forEach {cell in
                 if cell.playing {
                     cell.soundSlider.isHidden = true

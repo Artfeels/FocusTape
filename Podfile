@@ -7,5 +7,4 @@ target 'FocusTape' do
   use_frameworks!
   pod 'SwiftySound'
   pod 'SVGKit'
-  pod 'RAMPaperSwitch' 
 end

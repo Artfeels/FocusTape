@@ -44,10 +44,10 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DiZ-vs-6JS"/>
                                                 </connections>
                                             </collectionView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-cd-BAj" userLabel="Bottom View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-cd-BAj" userLabel="Bottom View" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
                                                 <rect key="frame" x="8" y="718" width="398" height="100"/>
                                                 <subviews>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fr5-km-cHY">
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fr5-km-cHY" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
                                                         <rect key="frame" x="174.5" y="8" width="51" height="31"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Sound ON/OFF" label="Sound ON/OFF"/>
                                                         <color key="onTintColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
