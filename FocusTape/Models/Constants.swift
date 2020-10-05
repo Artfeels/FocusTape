@@ -14,14 +14,17 @@ import UIKit
         "rain" : "main-rain",
         "fire" : "main-fire",
         "storm" : "main-thunder",
-        "wave" : "main-waves",
+        "stream" : "main-stream",
         "wind" : "main-wind",
         "grass" : "main-crickets",
-        "bowl" : "main-sbowl",
+        "bowl" : "main-bowl",
         "pine" : "main-forest",
         "noise" : "main-pink",
         "fan" : "main-fan",
-        "chimes" : "main-chimes"
+        "chimes" : "main-chimes",
+        "waves": "main-waves",
+        "brook": "main-brook",
+        "frog" : "main-frogs"
     ]
     
     let colors = [

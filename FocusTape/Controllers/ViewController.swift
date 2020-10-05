@@ -3,7 +3,10 @@
 //  FocusTape
 //
 //  Created by Artem Pechenkin on 9/18/20.
-//  Sounds: Fire, Thunder, Rain, Crickets, Wind, Ambience, Waves, Forest, Birds, Singing Bowl, Meditation
+//  Sounds: Fire, Thunder, Rain, Crickets, Wind, Stream, Waves, Forest, Birds, Singing Bowl, Meditation
+// TODO: Change sounds where white nose is - DONE
+// TODO: Correct turn on/off all sounds - DONE
+// TODO: Correct autolayouts for old iPhone versions
 
 import UIKit
 import AVFoundation
@@ -47,6 +50,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             sender.onTintColor = colors["yellow"]
             cells.forEach {cell in
                 if cell.playing {
+                    cell.afterPause = true
                     cell.soundSlider.isHidden = true
                     cell.playing = false
                     cell.currentSound?.pause()
@@ -57,13 +61,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
         } else {
             cells.forEach { cell in
-                if ((cell.currentSound?.paused) != nil) {
+                if (cell.afterPause) {
                     cell.playing = true
                     cell.currentSound?.resume()
                     let image = SVGKImage(named: cell.soundName)
                     image?.fillColor(color: colors["green"]!, opacity: 1.0)
                     cell.buttonImage.setBackgroundImage(image?.uiImage, for: .normal)
                     cell.soundSlider.isHidden = false
+                    cell.afterPause = false
                 }
             }
         }

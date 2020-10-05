@@ -13,6 +13,7 @@ import SVGKit
 class CollectionViewCell: UICollectionViewCell {
     var playing = false
     var soundName = ""
+    var afterPause = false
     public var currentSound: Sound?
     @IBOutlet var buttonImage: UIButton!
     @IBOutlet var soundSlider: UISlider!
@@ -26,6 +27,7 @@ class CollectionViewCell: UICollectionViewCell {
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
         let image = SVGKImage(named: buttonImage.currentTitle!)
+
         if !playing {
             if (buttonImage.currentTitle != nil) {
                 image?.fillColor(color: colors["green"]!, opacity: 1.0)
