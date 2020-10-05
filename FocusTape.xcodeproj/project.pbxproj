@@ -19,10 +19,10 @@
 		7626EA8C252BB12600336552 /* main-thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA89252BB12600336552 /* main-thunder.mp3 */; };
 		7626EA8D252BB12600336552 /* main-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA8A252BB12600336552 /* main-wind.mp3 */; };
 		7626EA8E252BB12600336552 /* main-waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA8B252BB12600336552 /* main-waves.mp3 */; };
-		7626EA91252BB26300336552 /* stream.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA90252BB26300336552 /* stream.svg */; };
-		7626EA9F252BB43200336552 /* frog.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA9C252BB43200336552 /* frog.svg */; };
-		7626EAA0252BB43200336552 /* brook.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA9D252BB43200336552 /* brook.svg */; };
 		7626EAA1252BB43200336552 /* waves.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EA9E252BB43200336552 /* waves.svg */; };
+		7626EAA7252BBAE200336552 /* stream.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EAA6252BBAE200336552 /* stream.svg */; };
+		7626EAAD252BBB3C00336552 /* brook.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EAAB252BBB3C00336552 /* brook.svg */; };
+		7626EAAE252BBB3C00336552 /* frog.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EAAC252BBB3C00336552 /* frog.svg */; };
 		763849772522A7A600F426A0 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763849762522A7A600F426A0 /* Switch.swift */; };
 		7638497B2523B15E00F426A0 /* main-rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7638497A2523B15E00F426A0 /* main-rain.mp3 */; };
 		763849A12523BC9500F426A0 /* rain.svg in Resources */ = {isa = PBXBuildFile; fileRef = 763849992523BC9400F426A0 /* rain.svg */; };
@@ -66,10 +66,10 @@
 		7626EA89252BB12600336552 /* main-thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-thunder.mp3"; sourceTree = "<group>"; };
 		7626EA8A252BB12600336552 /* main-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-wind.mp3"; sourceTree = "<group>"; };
 		7626EA8B252BB12600336552 /* main-waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-waves.mp3"; sourceTree = "<group>"; };
-		7626EA90252BB26300336552 /* stream.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stream.svg; sourceTree = "<group>"; };
-		7626EA9C252BB43200336552 /* frog.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = frog.svg; path = ../../../../Downloads/frog.svg; sourceTree = "<group>"; };
-		7626EA9D252BB43200336552 /* brook.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = brook.svg; path = ../../../../Downloads/brook.svg; sourceTree = "<group>"; };
 		7626EA9E252BB43200336552 /* waves.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = waves.svg; path = ../../../../Downloads/waves.svg; sourceTree = "<group>"; };
+		7626EAA6252BBAE200336552 /* stream.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stream.svg; sourceTree = "<group>"; };
+		7626EAAB252BBB3C00336552 /* brook.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = brook.svg; sourceTree = "<group>"; };
+		7626EAAC252BBB3C00336552 /* frog.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = frog.svg; sourceTree = "<group>"; };
 		763849762522A7A600F426A0 /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		7638497A2523B15E00F426A0 /* main-rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-rain.mp3"; sourceTree = "<group>"; };
 		763849992523BC9400F426A0 /* rain.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rain.svg; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 				763849AF2523BDD800F426A0 /* bowl.svg */,
 				763849992523BC9400F426A0 /* rain.svg */,
 				7638499D2523BC9500F426A0 /* storm.svg */,
-				7626EA90252BB26300336552 /* stream.svg */,
-				7626EA9D252BB43200336552 /* brook.svg */,
-				7626EA9C252BB43200336552 /* frog.svg */,
+				7626EAA6252BBAE200336552 /* stream.svg */,
 				7626EA9E252BB43200336552 /* waves.svg */,
+				7626EAAB252BBB3C00336552 /* brook.svg */,
+				7626EAAC252BBB3C00336552 /* frog.svg */,
 				763849BE2523CD7D00F426A0 /* chimes.svg */,
 				763849BF2523CD7D00F426A0 /* fan.svg */,
 				763849B22523C9FB00F426A0 /* noise.svg */,
@@ -295,12 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7626EA91252BB26300336552 /* stream.svg in Resources */,
 				7626EA8D252BB12600336552 /* main-wind.mp3 in Resources */,
+				7626EAA7252BBAE200336552 /* stream.svg in Resources */,
 				7626EAA1252BB43200336552 /* waves.svg in Resources */,
 				763849C02523CD7D00F426A0 /* chimes.svg in Resources */,
-				7626EA9F252BB43200336552 /* frog.svg in Resources */,
-				7626EAA0252BB43200336552 /* brook.svg in Resources */,
+				7626EAAD252BBB3C00336552 /* brook.svg in Resources */,
 				7638497B2523B15E00F426A0 /* main-rain.mp3 in Resources */,
 				763849A22523BC9500F426A0 /* birds.svg in Resources */,
 				76EFA61325148303007BE7AD /* LaunchScreen.storyboard in Resources */,
@@ -315,6 +314,7 @@
 				7626EA7C252BAFD600336552 /* main-bowl.mp3 in Resources */,
 				763849A52523BC9500F426A0 /* storm.svg in Resources */,
 				7626EA8C252BB12600336552 /* main-thunder.mp3 in Resources */,
+				7626EAAE252BBB3C00336552 /* frog.svg in Resources */,
 				76EFA61025148303007BE7AD /* Assets.xcassets in Resources */,
 				7626EA77252BAFD600336552 /* main-brook.mp3 in Resources */,
 				7626EA7A252BAFD600336552 /* main-chimes.mp3 in Resources */,
@@ -536,10 +536,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = XSBJSSCUR5;
 				INFOPLIST_FILE = FocusTape/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,10 +558,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = XSBJSSCUR5;
 				INFOPLIST_FILE = FocusTape/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
